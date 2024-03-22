@@ -1,0 +1,24 @@
+CREATE DATABASE `cadastro` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+
+CREATE TABLE `cliente` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(60) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `sexo` varchar(10) NOT NULL,
+  `ddd` int NOT NULL,
+  `telefone` int NOT NULL,
+  `endereco` varchar(70) NOT NULL,
+  `cidade` varchar(20) NOT NULL,
+  `estado` varchar(2) NOT NULL,
+  `bairro` varchar(20) NOT NULL,
+  `pais` varchar(20) NOT NULL,
+  `login` varchar(12) NOT NULL,
+  `senha` varchar(12) NOT NULL,
+  `news` varchar(8) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+INSERT INTO `cliente` (`nome`,`email`,`sexo`,`ddd`,`telefone`,`endereco`,`cidade`,`estado`,`pais`,`login`,`senha`,`news`)
+VALUES('Pamela','pamela@gmail.com','femi','61','9861515','brasilia','bsb','df','sobradinho','Brasil','123','senha','news')
